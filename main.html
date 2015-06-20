@@ -1,4 +1,9 @@
 <p> {{today | date }}</p>
 <br/>
 <p> The selfie for today is </p>
-<img src="{{selfiePath}}"/>
+<div>
+<img ng-if="{{selfieVisible}}" src="{{selfiePath}}" width="200px" height = "200px"/>
+ 
+  <div id="hideRect" width="200px" height = "200px"></div>
+  
+</div>
